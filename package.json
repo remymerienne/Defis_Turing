@@ -1,0 +1,29 @@
+{
+  "name": "defis_turing",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --watch --colors --verbose",
+    "test-cov": "jest --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/remymerienne/Defis_Turing.git"
+  },
+  "keywords": [],
+  "author": "Rémy Merienne",
+  "license": "ISC",
+  "browserslist": "last 4 versions",
+  "bugs": {
+    "url": "https://github.com/remymerienne/Defis_Turing/issues"
+  },
+  "homepage": "https://github.com/remymerienne/Defis_Turing#readme",
+  "devDependencies": {
+    "@types/jest": "^28.1.4",
+    "eslint": "^8.19.0",
+    "jest": "^28.1.2",
+    "@babel/plugin-transform-arrow-functions": "^7.16.7",
+    "@babel/preset-env": "^7.16.11"
+  }
+}
