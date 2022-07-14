@@ -1,1 +1,7 @@
 push pop shift unshift
+
+MATRICE :
+---------
+doc jsdoc
+    "jsdoc": "jsdoc ./js/index.js"
+photo extensions

@@ -20,10 +20,10 @@
   },
   "homepage": "https://github.com/remymerienne/Defis_Turing#readme",
   "devDependencies": {
+    "@babel/plugin-transform-arrow-functions": "^7.16.7",
+    "@babel/preset-env": "^7.16.11",
     "@types/jest": "^28.1.4",
     "eslint": "^8.19.0",
-    "jest": "^28.1.2",
-    "@babel/plugin-transform-arrow-functions": "^7.16.7",
-    "@babel/preset-env": "^7.16.11"
+    "jest": "^28.1.2"
   }
 }
