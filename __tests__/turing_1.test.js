@@ -2,7 +2,7 @@ import {
   isMultipleOfFive,
   isMultipleOfSeven,
   getArrayOfMultiples,
-  turing_1Solution,
+  sumOfMultiples,
 } from '../js/turing/turing_1.js';
 
 describe('isMultipleOfFive() Unit Test Suites', () => {
@@ -31,8 +31,8 @@ describe('getArrayOfMultiples() Unit Test Suites', () => {
   });
 });
 
-describe('turing_1Solution() Unit Test Suites', () => {
-  test('It should return solution', () => {
-    expect(turing_1Solution()).toBe(636456);
+describe('sumOfMultiples() Unit Test Suites', () => {
+  test('It should return the sum of the multiples of 5 and 7 between 5 and the number passed as an argument', () => {
+    expect(sumOfMultiples(2013)).toBe(636456);
   });
 });

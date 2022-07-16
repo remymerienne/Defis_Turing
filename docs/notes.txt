@@ -1,0 +1,8 @@
+push pop shift unshift
+
+MATRICE :
+---------
+- Tout jsdoc
+- Creation d'un rep ./docs
+- gitignore
+- photo extensions
