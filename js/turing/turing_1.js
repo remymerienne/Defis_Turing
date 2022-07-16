@@ -40,14 +40,14 @@ const isMultipleOfSeven = (numberToTest) => {
  * @function
  * @name getArrayOfMultiples
  * @description Return a list of multiples of 5 and 7 between 5 and the number passed as an argument.
- * @param {number} targetNumber - Largest multiple to achieve
+ * @param {number} maximumValue - Largest multiple to achieve
  * @requires (inner).isMultipleOfFive()
  * @requires (inner).isMultipleOfSeven()
  * @returns {number[]}
  */
-const getArrayOfMultiples = (targetNumber) => {
+const getArrayOfMultiples = (maximumValue) => {
   let multipleArray = [];
-  for (let i = 5; i < targetNumber; i++) {
+  for (let i = 5; i < maximumValue; i++) {
     if (isMultipleOfFive(i) || isMultipleOfSeven(i)) {
       multipleArray.push(i);
     }
@@ -59,13 +59,13 @@ const getArrayOfMultiples = (targetNumber) => {
  * @function
  * @name sumOfMultiples
  * @description Return the sum of the multiples of 5 and 7 between 5 and the number passed as an argument.
- * @param {number} targetNumber - The greatest multiple to add
+ * @param {number} maximumValue - The greatest multiple to add
  * @requires common_functions.getSumOfArrayNumbers()
  * @requires (inner).getArrayOfMultiples()
  * @returns {number}
  */
-const sumOfMultiples = (targetNumber) => {
-  return getSumOfArrayNumbers(getArrayOfMultiples(targetNumber));
+const sumOfMultiples = (maximumValue) => {
+  return getSumOfArrayNumbers(getArrayOfMultiples(maximumValue));
 };
 
 export {

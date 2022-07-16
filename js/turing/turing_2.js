@@ -1,50 +1,25 @@
 import { getSumOfArrayNumbers } from '../common_functions.js';
 
-/**
- * A function that returns an array of numbers that are less than the target number.
- *
- * @function
- * @name getFibonacciSequence
- * @param {number} target
- * @returns {number[]}
- */
-const getFibonacciSequence = (target) => {
-  const array = [0, 1];
-  let l = array.length;
-  let nextItem = array[l - 2] + array[l - 1];
-
-  while (nextItem < target) {
-    array.push(nextItem);
-    l = array.length;
-    nextItem = array[l - 2] + array[l - 1];
+const getFibonacciSequence = (maximumValue) => {
+  let sequence = [0, 1];
+  let l = sequence.length;
+  let nextItem = sequence[l - 2] + sequence[l - 1];
+  while (nextItem < maximumValue) {
+    sequence.push(nextItem);
+    l = sequence.length;
+    nextItem = sequence[l - 2] + sequence[l - 1];
   }
-
-  return array;
+  return sequence;
 };
 
-/**
- * A function that returns an array of odd numbers.
- *
- * @function
- * @name getArrayfilterByOddNumbers
- * @param {number[]} array
- * @returns {number[]}
- */
 const getArrayfilterByOddNumbers = (array) => {
   return array.filter((el) => el % 2 !== 0);
 };
 
-/**
- * A function declaration.
- *
- * @function
- * @name turing_2Solution
- * @returns {number}
- */
-const turing_2Solution = () => {
+const sumOfOddNumbersInFibonacciSequence = (maximumValue) => {
   return getSumOfArrayNumbers(
-    getArrayfilterByOddNumbers(getFibonacciSequence(4000000))
+    getArrayfilterByOddNumbers(getFibonacciSequence(maximumValue))
   );
 };
 
-export { turing_2Solution };
+export { sumOfOddNumbersInFibonacciSequence };

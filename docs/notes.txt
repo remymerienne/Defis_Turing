@@ -1,8 +1,26 @@
-push pop shift unshift
+NOTES
+=====
 
-MATRICE :
+Etapes :
+--------
+- Coder un défi
+- Tester
+- Documenter
+
+=> implémentation HTML ?
+
+*******************************************************************************
+
+Prochaines méthodes :
+---------------------
+- pop
+- shift 
+- unshift
+
+*******************************************************************************
+
+Matrice :
 ---------
-- Tout jsdoc
-- Creation d'un rep ./docs
-- gitignore
 - photo extensions
+
+*******************************************************************************
