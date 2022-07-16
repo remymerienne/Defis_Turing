@@ -1,7 +1,7 @@
-const getSumOfArrayNumbers = (array) => {
+const getSumOfListNumbers = (array) => {
   return array.reduce(
     (accumulateur, valeurCourante) => accumulateur + valeurCourante
   );
 };
 
-export { getSumOfArrayNumbers };
+export { getSumOfListNumbers };

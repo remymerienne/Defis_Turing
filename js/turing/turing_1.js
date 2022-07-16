@@ -1,4 +1,4 @@
-import { getSumOfArrayNumbers } from '../common_functions.js';
+import { getSumOfListNumbers } from '../common_functions.js';
 
 /**
  * @module Turing_1
@@ -38,39 +38,39 @@ const isMultipleOfSeven = (numberToTest) => {
 
 /**
  * @function
- * @name getArrayOfMultiples
+ * @name getListOfMultiples
  * @description Return a list of multiples of 5 and 7 between 5 and the number passed as an argument.
  * @param {number} maximumValue - Largest multiple to achieve
  * @requires (inner).isMultipleOfFive()
  * @requires (inner).isMultipleOfSeven()
  * @returns {number[]}
  */
-const getArrayOfMultiples = (maximumValue) => {
-  let multipleArray = [];
+const getListOfMultiples = (maximumValue) => {
+  let listOfMultiples = [];
   for (let i = 5; i < maximumValue; i++) {
     if (isMultipleOfFive(i) || isMultipleOfSeven(i)) {
-      multipleArray.push(i);
+      listOfMultiples.push(i);
     }
   }
-  return multipleArray;
+  return listOfMultiples;
 };
 
 /**
  * @function
- * @name sumOfMultiples
+ * @name getSumOfMultiples
  * @description Return the sum of the multiples of 5 and 7 between 5 and the number passed as an argument.
  * @param {number} maximumValue - The greatest multiple to add
- * @requires common_functions.getSumOfArrayNumbers()
- * @requires (inner).getArrayOfMultiples()
+ * @requires common_functions.getSumOfListNumbers()
+ * @requires (inner).getListOfMultiples()
  * @returns {number}
  */
-const sumOfMultiples = (maximumValue) => {
-  return getSumOfArrayNumbers(getArrayOfMultiples(maximumValue));
+const getSumOfMultiples = (maximumValue) => {
+  return getSumOfListNumbers(getListOfMultiples(maximumValue));
 };
 
 export {
   isMultipleOfFive,
   isMultipleOfSeven,
-  getArrayOfMultiples,
-  sumOfMultiples,
+  getListOfMultiples,
+  getSumOfMultiples,
 };

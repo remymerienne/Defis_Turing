@@ -1,5 +1,5 @@
-import { sumOfMultiples } from './turing/turing_1.js';
-import { sumOfOddNumbersInFibonacciSequence } from './turing/turing_2.js';
+import { getSumOfMultiples } from './turing/turing_1.js';
+import { getSumOfOddNumbersInFibonacciSequence } from './turing/turing_2.js';
 
 const displaySolution = (number, solution) => {
   console.log('Défis N' + number + ' : ' + solution);
@@ -7,8 +7,8 @@ const displaySolution = (number, solution) => {
 
 const start = performance.now();
 
-displaySolution(1, sumOfMultiples(2013));
-displaySolution(2, sumOfOddNumbersInFibonacciSequence(4000000));
+displaySolution(1, getSumOfMultiples(2013));
+displaySolution(2, getSumOfOddNumbersInFibonacciSequence(4000000));
 
 const end = performance.now();
 console.log(end - start + ' ms.');

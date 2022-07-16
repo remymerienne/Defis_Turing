@@ -1,4 +1,4 @@
-import { getSumOfArrayNumbers } from '../common_functions.js';
+import { getSumOfListNumbers } from '../common_functions.js';
 
 const getFibonacciSequence = (maximumValue) => {
   let sequence = [0, 1];
@@ -12,14 +12,14 @@ const getFibonacciSequence = (maximumValue) => {
   return sequence;
 };
 
-const getArrayfilterByOddNumbers = (array) => {
-  return array.filter((el) => el % 2 !== 0);
+const getListfilteredByOddNumbers = (list) => {
+  return list.filter((el) => el % 2 !== 0);
 };
 
-const sumOfOddNumbersInFibonacciSequence = (maximumValue) => {
-  return getSumOfArrayNumbers(
-    getArrayfilterByOddNumbers(getFibonacciSequence(maximumValue))
+const getSumOfOddNumbersInFibonacciSequence = (maximumValue) => {
+  return getSumOfListNumbers(
+    getListfilteredByOddNumbers(getFibonacciSequence(maximumValue))
   );
 };
 
-export { sumOfOddNumbersInFibonacciSequence };
+export { getSumOfOddNumbersInFibonacciSequence };
