@@ -2,7 +2,7 @@ import { getSumOfListNumbers } from '../common_functions.js';
 
 /**
  * @module Turing_1
- * @description Source code for resolution of the first challenge.
+ * @description Source code for resolving the first challenge.
  * @author Rémy Merienne
  */
 

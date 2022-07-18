@@ -1,5 +1,11 @@
 import { getSumOfListNumbers } from '../common_functions.js';
 
+/**
+ * @module Turing_2
+ * @description Source code for resolving the second challenge
+ * @author Rémy Merienne
+ */
+
 const getFibonacciSequence = (maximumValue) => {
   let sequence = [0, 1];
   let l = sequence.length;
@@ -12,14 +18,18 @@ const getFibonacciSequence = (maximumValue) => {
   return sequence;
 };
 
-const getListfilteredByOddNumbers = (list) => {
+const getListFilteredByOddNumbers = (list) => {
   return list.filter((el) => el % 2 !== 0);
 };
 
 const getSumOfOddNumbersInFibonacciSequence = (maximumValue) => {
   return getSumOfListNumbers(
-    getListfilteredByOddNumbers(getFibonacciSequence(maximumValue))
+    getListFilteredByOddNumbers(getFibonacciSequence(maximumValue))
   );
 };
 
-export { getSumOfOddNumbersInFibonacciSequence };
+export {
+  getFibonacciSequence,
+  getListFilteredByOddNumbers,
+  getSumOfOddNumbersInFibonacciSequence,
+};
