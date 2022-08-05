@@ -22,7 +22,7 @@ describe('getFirstQuotient() Unit Test Suites', () => {
 });
 
 describe('getPrimeFactorList() Unit Test Suites', () => {
-  test('should return the prime factors list of number', () => {
+  test('should return the prime factors list of `number`', () => {
     expect(getPrimeFactorList(number)).toEqual(primeFactorList);
   });
 });

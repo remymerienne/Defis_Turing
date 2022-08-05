@@ -1,4 +1,10 @@
 /**
+ * @module prime_numbers
+ * @description Ensemble des fonctions permettant de générer une liste de nombres premiers.
+ * @author Rémy Merienne
+ */
+
+/**
  * @function
  * @name isPrimeNumber
  * @description Teste la primalité d'un entier naturel.
@@ -18,16 +24,21 @@ const isPrimeNumber = (n) => {
   return true;
 };
 
-// ************************************
-
-const getPrimeNumberArray = (numberUpTo) => {
-  let primeNumberArray = [];
-  for (let i = 2; i <= numberUpTo; i++) {
-    if (isPrimeNumber(i) === true) {
-      primeNumberArray.push(i);
+/**
+ * @function
+ * @name getPrimeNumberList
+ * @description Génère une liste des nombres premiers compris entre 2 et **_n_**.
+ * @param {number} n - Nombre maximum à inclure dans la liste
+ * @returns {number[]} Liste des nombres premiers compris entre 2 et **_n_**.
+ */
+const getPrimeNumberList = (n) => {
+  let primeNumberList = [];
+  for (let d = 2; d <= n; d++) {
+    if (isPrimeNumber(d) === true) {
+      primeNumberList.push(d);
     }
   }
-  return primeNumberArray;
+  return primeNumberList;
 };
 
-export { getPrimeNumberArray };
+export { isPrimeNumber, getPrimeNumberList };

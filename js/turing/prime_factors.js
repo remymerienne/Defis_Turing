@@ -1,5 +1,5 @@
 /**
- * @module prime-factors
+ * @module prime_factors
  * @description Ensemble des fonctions permettant de décomposer un entier naturel sous la forme d'un produit de nombres premiers (Décomposition en produit de facteurs premiers).
  * @author Rémy Merienne
  */
