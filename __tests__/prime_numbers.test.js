@@ -14,11 +14,10 @@ describe('isPrimeNumber() Unit Test Suites', () => {
 
 describe('getPrimeNumberList() Unit Test Suites', () => {
   test('The number 100 passed as an argument should return a prime number list between 2 and 100', () => {
-    const number = 100;
     const primeNumberList = [
       2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67,
       71, 73, 79, 83, 89, 97,
     ];
-    expect(getPrimeNumberList(number)).toEqual(primeNumberList);
+    expect(getPrimeNumberList(100)).toEqual(primeNumberList);
   });
 });
