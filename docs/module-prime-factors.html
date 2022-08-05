@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>JSDoc: Module: Turing_2</title>
+    <title>JSDoc: Module: prime-factors</title>
 
     <script src="scripts/prettify/prettify.js"> </script>
     <script src="scripts/prettify/lang-css.js"> </script>
@@ -17,7 +17,7 @@
 
 <div id="main">
 
-    <h1 class="page-title">Module: Turing_2</h1>
+    <h1 class="page-title">Module: prime-factors</h1>
 
     
 
@@ -38,7 +38,7 @@
     <div class="container-overview">
     
         
-            <div class="description"><p>Source code for resolving the second challenge</p></div>
+            <div class="description"><p>Ensemble des fonctions permettant de décomposer un entier naturel sous la forme d'un produit de nombres premiers (Décomposition en produit de facteurs premiers).</p></div>
         
 
         
@@ -94,7 +94,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="turing_2.js.html">turing_2.js</a>, <a href="turing_2.js.html#line3">line 3</a>
+        <a href="prime_factors.js.html">prime_factors.js</a>, <a href="prime_factors.js.html#line1">line 1</a>
     </li></ul></dd>
     
 
@@ -151,7 +151,7 @@
     
 
     
-    <h4 class="name" id="~getFibonacciSequence"><span class="type-signature">(inner) </span>getFibonacciSequence<span class="signature">(maximumValue)</span><span class="type-signature"> &rarr; {Array.&lt;number>}</span></h4>
+    <h4 class="name" id="~getFirstQuotient"><span class="type-signature">(inner) </span>getFirstQuotient<span class="signature">(n, list)</span><span class="type-signature"> &rarr; {number}</span></h4>
     
 
     
@@ -159,7 +159,7 @@
 
 
 <div class="description">
-    <p>Return a list of numbers that are part of the Fibonacci sequence between 0 and the number passed as an argument.</p>
+    <p>Retourne le premier quotient entier trouvé de <strong><em>n</em></strong> divisé par un des nombres contenus dans <strong><em>list</em></strong>.</p>
 </div>
 
 
@@ -195,7 +195,7 @@
 
         <tr>
             
-                <td class="name"><code>maximumValue</code></td>
+                <td class="name"><code>n</code></td>
             
 
             <td class="type">
@@ -211,141 +211,9 @@
 
             
 
-            <td class="description last"><p>Highest number to stop list</p></td>
+            <td class="description last"><p>Nombre à diviser</p></td>
         </tr>
 
-    
-    </tbody>
-</table>
-
-
-
-
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="turing_2.js.html">turing_2.js</a>, <a href="turing_2.js.html#line9">line 9</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<h5>Returns:</h5>
-
-        
-
-
-<dl>
-    <dt>
-        Type
-    </dt>
-    <dd>
-        
-<span class="param-type">Array.&lt;number></span>
-
-
-    </dd>
-</dl>
-
-    
-
-
-
-
-
-        
-            
-
-    
-
-    
-    <h4 class="name" id="~getListFilteredByOddNumbers"><span class="type-signature">(inner) </span>getListFilteredByOddNumbers<span class="signature">(list)</span><span class="type-signature"> &rarr; {Array.&lt;number>}</span></h4>
-    
-
-    
-
-
-
-<div class="description">
-    <p>Return a list of odd numbers.</p>
-</div>
-
-
-
-
-
-
-
-
-
-    <h5>Parameters:</h5>
-    
-
-<table class="params">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
     
 
         <tr>
@@ -366,7 +234,7 @@
 
             
 
-            <td class="description last"><p>List to filter by odd numbers</p></td>
+            <td class="description last"><p>Liste des diviseurs à soumettre</p></td>
         </tr>
 
     
@@ -407,7 +275,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="turing_2.js.html">turing_2.js</a>, <a href="turing_2.js.html#line28">line 28</a>
+        <a href="prime_factors.js.html">prime_factors.js</a>, <a href="prime_factors.js.html#line28">line 28</a>
     </li></ul></dd>
     
 
@@ -435,6 +303,10 @@
 <h5>Returns:</h5>
 
         
+<div class="param-desc">
+    <p>Premier quotient entier trouvé de <strong><em>n</em></strong> divisé par un des nombres contenus dans <strong><em>list</em></strong>.</p>
+</div>
+
 
 
 <dl>
@@ -443,7 +315,7 @@
     </dt>
     <dd>
         
-<span class="param-type">Array.&lt;number></span>
+<span class="param-type">number</span>
 
 
     </dd>
@@ -461,7 +333,7 @@
     
 
     
-    <h4 class="name" id="~getSumOfOddNumbersInFibonacciSequence"><span class="type-signature">(inner) </span>getSumOfOddNumbersInFibonacciSequence<span class="signature">(maximumValue)</span><span class="type-signature"> &rarr; {number}</span></h4>
+    <h4 class="name" id="~getPrimeFactorList"><span class="type-signature">(inner) </span>getPrimeFactorList<span class="signature">(n)</span><span class="type-signature"> &rarr; {Array.&lt;number>}</span></h4>
     
 
     
@@ -469,7 +341,7 @@
 
 
 <div class="description">
-    <p>Return the sum of odd numbers numbers that are part of the Fibonacci sequence between 0 and the number passed as an argument.</p>
+    <p>Retourne la liste des facteurs premiers de <strong><em>n</em></strong>.</p>
 </div>
 
 
@@ -505,7 +377,7 @@
 
         <tr>
             
-                <td class="name"><code>maximumValue</code></td>
+                <td class="name"><code>n</code></td>
             
 
             <td class="type">
@@ -521,7 +393,7 @@
 
             
 
-            <td class="description last"><p>Highest number to stop list</p></td>
+            <td class="description last"><p>Nombre à décomposer en facteurs premiers</p></td>
         </tr>
 
     
@@ -562,7 +434,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="turing_2.js.html">turing_2.js</a>, <a href="turing_2.js.html#line39">line 39</a>
+        <a href="prime_factors.js.html">prime_factors.js</a>, <a href="prime_factors.js.html#line44">line 44</a>
     </li></ul></dd>
     
 
@@ -574,15 +446,6 @@
 </dl>
 
 
-
-<h5>Requires:</h5>
-<ul>
-    <li>module:common_functions.getSumOfListNumbers()</li>
-
-    <li>module:(inner).getListFilteredByOddNumbers()</li>
-
-    <li>module:(inner).getFibonacciSequence()</li>
-</ul>
 
 
 
@@ -599,6 +462,10 @@
 <h5>Returns:</h5>
 
         
+<div class="param-desc">
+    <p>Liste des facteurs premiers de <strong><em>n</em></strong>.</p>
+</div>
+
 
 
 <dl>
@@ -607,7 +474,166 @@
     </dt>
     <dd>
         
+<span class="param-type">Array.&lt;number></span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="~getShortPrimeNumberList"><span class="type-signature">(inner) </span>getShortPrimeNumberList<span class="signature">(n)</span><span class="type-signature"> &rarr; {Array.&lt;number>}</span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    <p>Retourne la liste des nombres premiers compris entre <strong><em>2</em></strong> et <strong><em>√n</em></strong>.</p>
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>n</code></td>
+            
+
+            <td class="type">
+            
+                
 <span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Nombre dont la racine carré déterminera la fin de la liste</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="prime_factors.js.html">prime_factors.js</a>, <a href="prime_factors.js.html#line7">line 7</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    <p>Tableau des nombres premiers compris entre <strong><em>2</em></strong> et <strong><em>√n</em></strong>.</p>
+</div>
+
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Array.&lt;number></span>
 
 
     </dd>

@@ -104,7 +104,7 @@
     
 
     
-    <h4 class="name" id="getArrayfilterByOddNumbers"><span class="type-signature"></span>getArrayfilterByOddNumbers<span class="signature">(array)</span><span class="type-signature"> &rarr; {Array.&lt;number>}</span></h4>
+    <h4 class="name" id="isPrimeNumber"><span class="type-signature"></span>isPrimeNumber<span class="signature">(n)</span><span class="type-signature"> &rarr; {boolean}</span></h4>
     
 
     
@@ -112,7 +112,7 @@
 
 
 <div class="description">
-    <p>A function that returns an array of odd numbers.</p>
+    <p>Teste la primalité d'un entier naturel.</p>
 </div>
 
 
@@ -148,13 +148,13 @@
 
         <tr>
             
-                <td class="name"><code>array</code></td>
+                <td class="name"><code>n</code></td>
             
 
             <td class="type">
             
                 
-<span class="param-type">Array.&lt;number></span>
+<span class="param-type">number</span>
 
 
             
@@ -164,7 +164,7 @@
 
             
 
-            <td class="description last"></td>
+            <td class="description last"><p>Entier naturel à tester</p></td>
         </tr>
 
     
@@ -205,7 +205,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="turing_2.js.html">turing_2.js</a>, <a href="turing_2.js.html#line25">line 25</a>
+        <a href="prems.js.html">prems.js</a>, <a href="prems.js.html#line1">line 1</a>
     </li></ul></dd>
     
 
@@ -233,276 +233,19 @@
 <h5>Returns:</h5>
 
         
-
-
-<dl>
-    <dt>
-        Type
-    </dt>
-    <dd>
-        
-<span class="param-type">Array.&lt;number></span>
-
-
-    </dd>
-</dl>
-
-    
-
-
-
-
-
-        
-            
-
-    
-
-    
-    <h4 class="name" id="getFibonacciSequence"><span class="type-signature"></span>getFibonacciSequence<span class="signature">(target)</span><span class="type-signature"> &rarr; {Array.&lt;number>}</span></h4>
-    
-
-    
-
-
-
-<div class="description">
-    <p>A function that returns an array of numbers that are less than the target number.</p>
+<div class="param-desc">
+    <p>Retourne <strong><em>true</em></strong> si <strong><em>n</em></strong> est un nombre premier. Sinon, retourne <strong><em>false</em></strong>.</p>
 </div>
 
 
 
-
-
-
-
-
-
-    <h5>Parameters:</h5>
-    
-
-<table class="params">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>target</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">number</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"></td>
-        </tr>
-
-    
-    </tbody>
-</table>
-
-
-
-
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="turing_2.js.html">turing_2.js</a>, <a href="turing_2.js.html#line3">line 3</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<h5>Returns:</h5>
-
-        
-
-
 <dl>
     <dt>
         Type
     </dt>
     <dd>
         
-<span class="param-type">Array.&lt;number></span>
-
-
-    </dd>
-</dl>
-
-    
-
-
-
-
-
-        
-            
-
-    
-
-    
-    <h4 class="name" id="turing_2Solution"><span class="type-signature"></span>turing_2Solution<span class="signature">()</span><span class="type-signature"> &rarr; {number}</span></h4>
-    
-
-    
-
-
-
-<div class="description">
-    <p>A function declaration.</p>
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="turing_2.js.html">turing_2.js</a>, <a href="turing_2.js.html#line37">line 37</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<h5>Returns:</h5>
-
-        
-
-
-<dl>
-    <dt>
-        Type
-    </dt>
-    <dd>
-        
-<span class="param-type">number</span>
+<span class="param-type">boolean</span>
 
 
     </dd>
@@ -530,13 +273,13 @@
 </div>
 
 <nav>
-    <h2><a href="index.html">Home</a></h2><h3>Modules</h3><ul><li><a href="module-Turing_1.html">Turing_1</a></li></ul><h3>Global</h3><ul><li><a href="global.html#getArrayfilterByOddNumbers">getArrayfilterByOddNumbers</a></li><li><a href="global.html#getFibonacciSequence">getFibonacciSequence</a></li><li><a href="global.html#turing_2Solution">turing_2Solution</a></li></ul>
+    <h2><a href="index.html">Home</a></h2><h3>Modules</h3><ul><li><a href="module-prime-factors.html">prime-factors</a></li><li><a href="module-Turing_1.html">Turing_1</a></li><li><a href="module-Turing_2.html">Turing_2</a></li></ul><h3>Global</h3><ul><li><a href="global.html#isPrimeNumber">isPrimeNumber</a></li></ul>
 </nav>
 
 <br class="clear">
 
 <footer>
-    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 3.6.10</a> on Sat Jul 16 2022 15:21:50 GMT+0700 (heure d’Indochine)
+    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 3.6.10</a> on Fri Aug 05 2022 14:11:08 GMT+0200 (heure d’été d’Europe centrale)
 </footer>
 
 <script> prettyPrint(); </script>
