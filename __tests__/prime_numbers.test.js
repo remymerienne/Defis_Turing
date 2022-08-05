@@ -1,7 +1,7 @@
 import {
   isPrimeNumber,
   getPrimeNumberList,
-} from '../js/turing/prime_numbers.js';
+} from '../js/arithmetic/prime_numbers.js';
 
 describe('isPrimeNumber() Unit Test Suites', () => {
   test('A non-prime number passed as an argument should return false', () => {

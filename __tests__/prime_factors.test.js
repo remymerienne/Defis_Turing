@@ -2,7 +2,7 @@ import {
   getShortPrimeNumberList,
   getFirstQuotient,
   getPrimeFactorList,
-} from '../js/turing/prime_factors.js';
+} from '../js/arithmetic/prime_factors.js';
 
 const number = 4000;
 const shortPrimeNumberList = [2, 4, 5, 8, 10, 16, 20, 25, 32, 40, 50];

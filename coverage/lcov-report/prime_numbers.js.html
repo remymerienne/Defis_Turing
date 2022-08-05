@@ -3,15 +3,15 @@
 <html lang="en">
 
 <head>
-    <title>Code coverage report for js/common_functions.js</title>
+    <title>Code coverage report for prime_numbers.js</title>
     <meta charset="utf-8" />
-    <link rel="stylesheet" href="../prettify.css" />
-    <link rel="stylesheet" href="../base.css" />
-    <link rel="shortcut icon" type="image/x-icon" href="../favicon.png" />
+    <link rel="stylesheet" href="prettify.css" />
+    <link rel="stylesheet" href="base.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <style type='text/css'>
         .coverage-summary .sorter {
-            background-image: url(../sort-arrow-sprite.png);
+            background-image: url(sort-arrow-sprite.png);
         }
     </style>
 </head>
@@ -19,20 +19,20 @@
 <body>
 <div class='wrapper'>
     <div class='pad1'>
-        <h1><a href="../index.html">All files</a> / <a href="index.html">js</a> common_functions.js</h1>
+        <h1><a href="index.html">All files</a> prime_numbers.js</h1>
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>3/3</span>
+                <span class='fraction'>13/13</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>0/0</span>
+                <span class='fraction'>4/4</span>
             </div>
         
             
@@ -46,7 +46,7 @@
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>3/3</span>
+                <span class='fraction'>11/11</span>
             </div>
         
             
@@ -93,9 +93,21 @@
 <a name='L28'></a><a href='#L28'>28</a>
 <a name='L29'></a><a href='#L29'>29</a>
 <a name='L30'></a><a href='#L30'>30</a>
-<a name='L31'></a><a href='#L31'>31</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-yes">655x</span>
+<a name='L31'></a><a href='#L31'>31</a>
+<a name='L32'></a><a href='#L32'>32</a>
+<a name='L33'></a><a href='#L33'>33</a>
+<a name='L34'></a><a href='#L34'>34</a>
+<a name='L35'></a><a href='#L35'>35</a>
+<a name='L36'></a><a href='#L36'>36</a>
+<a name='L37'></a><a href='#L37'>37</a>
+<a name='L38'></a><a href='#L38'>38</a>
+<a name='L39'></a><a href='#L39'>39</a>
+<a name='L40'></a><a href='#L40'>40</a>
+<a name='L41'></a><a href='#L41'>41</a>
+<a name='L42'></a><a href='#L42'>42</a>
+<a name='L43'></a><a href='#L43'>43</a>
+<a name='L44'></a><a href='#L44'>44</a>
+<a name='L45'></a><a href='#L45'>45</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -108,6 +120,17 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">101x</span>
+<span class="cline-any cline-yes">242x</span>
+<span class="cline-any cline-yes">75x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">26x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -117,42 +140,61 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">99x</span>
+<span class="cline-any cline-yes">25x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">const getSumOfListNumbers = (array) =&gt; {
-  return array.reduce(
-    (accumulateur, valeurCourante) =&gt; accumulateur + valeurCourante
-  );
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">/**
+ * @module prime_numbers
+ * @description Ensemble des fonctions permettant de générer une liste de nombres premiers.
+ * @author Rémy Merienne
+ */
+&nbsp;
+/**
+ * @function
+ * @name isPrimeNumber
+ * @description Teste la primalité d'un entier naturel.
+ * @param {number} n - Entier naturel à tester
+ * @returns {boolean} Retourne **_true_** si **_n_** est un nombre premier. Sinon, retourne **_false_**.
+ */
+const isPrimeNumber = (n) =&gt; {
+  // Si le diviseur 'd' (compris entre 2 et √n) divise 'n', alors 'n' n'est pas
+  // un nombre premier et la fonction retourne 'false'. La boucle s'arrête.
+  for (let d = 2; d &lt;= Math.sqrt(n); d++) {
+    if (n % d === 0) {
+      return false;
+    }
+  }
+  // Si aucun diviseur n'a été trouvé, alors 'n' est un nombre premier. La
+  // fonction retourne 'true'.
+  return true;
 };
 &nbsp;
-export { getSumOfListNumbers };
+/**
+ * @function
+ * @name getPrimeNumberList
+ * @description Retourne la liste des nombres premiers compris entre 2 et le nombre passé en argument .
+ * @param {number} maximumValue - Nombre le plus grand pouvant figurer dans la liste
+ * @returns {number[]}
+ */
+const getPrimeNumberList = (maximumValue) =&gt; {
+  let primeNumberList = [];
+  for (let e = 2; e &lt;= maximumValue; e++) {
+    if (isPrimeNumber(e) === true) {
+      primeNumberList.push(e);
+    }
+  }
+  return primeNumberList;
+};
 &nbsp;
-// ************************************
-&nbsp;
-// const isPrimeNumber = (number) =&gt; {
-//   for (let i = 2; i &lt;= Math.sqrt(number); i++) {
-//     if (number % i === 0) {
-//       return false;
-//     }
-//   }
-//   return true;
-// };
-&nbsp;
-// const getPrimeNumberArray = (numberUpTo) =&gt; {
-//   let primeNumberArray = [];
-//   for (let i = 2; i &lt;= numberUpTo; i++) {
-//     if (isPrimeNumber(i)) {
-//       primeNumberArray.push(i);
-//     }
-//   }
-//   return primeNumberArray;
-// };
-&nbsp;
-// ************************************
+export { isPrimeNumber, getPrimeNumberList };
 &nbsp;</pre></td></tr></table></pre>
 
                 <div class='push'></div><!-- for sticky footer -->
@@ -160,16 +202,16 @@ export { getSumOfListNumbers };
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at Mon Jul 18 2022 18:11:11 GMT+0700 (heure d’Indochine)
+                at Fri Aug 05 2022 16:16:16 GMT+0200 (heure d’été d’Europe centrale)
             </div>
-        <script src="../prettify.js"></script>
+        <script src="prettify.js"></script>
         <script>
             window.onload = function () {
                 prettyPrint();
             };
         </script>
-        <script src="../sorter.js"></script>
-        <script src="../block-navigation.js"></script>
+        <script src="sorter.js"></script>
+        <script src="block-navigation.js"></script>
     </body>
 </html>
     

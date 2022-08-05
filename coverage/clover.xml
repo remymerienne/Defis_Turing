@@ -1,53 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1658142671546" clover="3.2.0">
-  <project timestamp="1658142671547" name="All files">
-    <metrics statements="32" coveredstatements="32" conditionals="8" coveredconditionals="8" methods="10" coveredmethods="10" elements="50" coveredelements="50" complexity="0" loc="32" ncloc="32" packages="2" files="3" classes="3"/>
-    <package name="js">
-      <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
-      <file name="common_functions.js" path="/Users/remy/Downloads/Working/Defis_Turing/js/common_functions.js">
-        <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
-        <line num="1" count="3" type="stmt"/>
-        <line num="2" count="3" type="stmt"/>
-        <line num="3" count="655" type="stmt"/>
-      </file>
-    </package>
-    <package name="js.turing">
-      <metrics statements="29" coveredstatements="29" conditionals="8" coveredconditionals="8" methods="8" coveredmethods="8"/>
-      <file name="turing_1.js" path="/Users/remy/Downloads/Working/Defis_Turing/js/turing/turing_1.js">
-        <metrics statements="16" coveredstatements="16" conditionals="8" coveredconditionals="8" methods="4" coveredmethods="4"/>
-        <line num="16" count="1" type="stmt"/>
-        <line num="17" count="2045" type="cond" truecount="2" falsecount="0"/>
-        <line num="18" count="410" type="stmt"/>
-        <line num="20" count="1635" type="stmt"/>
-        <line num="31" count="1" type="stmt"/>
-        <line num="32" count="1636" type="cond" truecount="2" falsecount="0"/>
-        <line num="33" count="235" type="stmt"/>
-        <line num="35" count="1401" type="stmt"/>
-        <line num="48" count="1" type="stmt"/>
-        <line num="49" count="2" type="stmt"/>
-        <line num="50" count="2" type="stmt"/>
-        <line num="51" count="2043" type="cond" truecount="4" falsecount="0"/>
-        <line num="52" count="643" type="stmt"/>
-        <line num="55" count="2" type="stmt"/>
-        <line num="67" count="1" type="stmt"/>
-        <line num="68" count="1" type="stmt"/>
-      </file>
-      <file name="turing_2.js" path="/Users/remy/Downloads/Working/Defis_Turing/js/turing/turing_2.js">
-        <metrics statements="13" coveredstatements="13" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="4"/>
-        <line num="9" count="1" type="stmt"/>
-        <line num="10" count="2" type="stmt"/>
-        <line num="11" count="2" type="stmt"/>
-        <line num="12" count="2" type="stmt"/>
-        <line num="13" count="2" type="stmt"/>
-        <line num="14" count="42" type="stmt"/>
-        <line num="15" count="42" type="stmt"/>
-        <line num="16" count="42" type="stmt"/>
-        <line num="18" count="2" type="stmt"/>
-        <line num="21" count="1" type="stmt"/>
-        <line num="22" count="46" type="stmt"/>
-        <line num="25" count="1" type="stmt"/>
-        <line num="26" count="1" type="stmt"/>
-      </file>
-    </package>
+<coverage generated="1659708976033" clover="3.2.0">
+  <project timestamp="1659708976034" name="All files">
+    <metrics statements="38" coveredstatements="38" conditionals="8" coveredconditionals="8" methods="6" coveredmethods="6" elements="52" coveredelements="52" complexity="0" loc="38" ncloc="38" packages="1" files="3" classes="3"/>
+    <file name="fibonacci_sequence.js" path="/Users/remy/Downloads/Working/Defis_Turing/js/arithmetic/fibonacci_sequence.js">
+      <metrics statements="9" coveredstatements="9" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <line num="14" count="1" type="stmt"/>
+      <line num="16" count="1" type="stmt"/>
+      <line num="17" count="1" type="stmt"/>
+      <line num="19" count="1" type="stmt"/>
+      <line num="21" count="1" type="stmt"/>
+      <line num="23" count="10" type="stmt"/>
+      <line num="25" count="10" type="stmt"/>
+      <line num="27" count="10" type="stmt"/>
+      <line num="29" count="1" type="stmt"/>
+    </file>
+    <file name="prime_factors.js" path="/Users/remy/Downloads/Working/Defis_Turing/js/arithmetic/prime_factors.js">
+      <metrics statements="18" coveredstatements="18" conditionals="4" coveredconditionals="4" methods="3" coveredmethods="3"/>
+      <line num="14" count="1" type="stmt"/>
+      <line num="16" count="2" type="stmt"/>
+      <line num="18" count="2" type="stmt"/>
+      <line num="21" count="124" type="cond" truecount="2" falsecount="0"/>
+      <line num="22" count="22" type="stmt"/>
+      <line num="25" count="2" type="stmt"/>
+      <line num="36" count="1" type="stmt"/>
+      <line num="37" count="23" type="stmt"/>
+      <line num="38" count="37" type="cond" truecount="2" falsecount="0"/>
+      <line num="39" count="23" type="stmt"/>
+      <line num="51" count="1" type="stmt"/>
+      <line num="52" count="1" type="stmt"/>
+      <line num="53" count="1" type="stmt"/>
+      <line num="56" count="1" type="stmt"/>
+      <line num="58" count="7" type="stmt"/>
+      <line num="60" count="7" type="stmt"/>
+      <line num="64" count="1" type="stmt"/>
+      <line num="65" count="1" type="stmt"/>
+    </file>
+    <file name="prime_numbers.js" path="/Users/remy/Downloads/Working/Defis_Turing/js/arithmetic/prime_numbers.js">
+      <metrics statements="11" coveredstatements="11" conditionals="4" coveredconditionals="4" methods="2" coveredmethods="2"/>
+      <line num="14" count="1" type="stmt"/>
+      <line num="17" count="101" type="stmt"/>
+      <line num="18" count="242" type="cond" truecount="2" falsecount="0"/>
+      <line num="19" count="75" type="stmt"/>
+      <line num="24" count="26" type="stmt"/>
+      <line num="34" count="1" type="stmt"/>
+      <line num="35" count="1" type="stmt"/>
+      <line num="36" count="1" type="stmt"/>
+      <line num="37" count="99" type="cond" truecount="2" falsecount="0"/>
+      <line num="38" count="25" type="stmt"/>
+      <line num="41" count="1" type="stmt"/>
+    </file>
   </project>
 </coverage>

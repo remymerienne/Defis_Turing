@@ -7,9 +7,9 @@
 /**
  * @function
  * @name getShortPrimeNumberList
- * @description Retourne la liste des nombres premiers compris entre **_2_** et **_√n_**.
- * @param {number} n - Nombre dont la racine carré déterminera la fin de la liste
- * @returns {number[]} Tableau des nombres premiers compris entre **_2_** et **_√n_**.
+ * @description Retourne la liste des nombres premiers compris entre 2 et la racine carrée du nombre passé en argument.
+ * @param {number} n - Nombre dont la racine carré déterminera la valeur maximum de la liste
+ * @returns {number[]}
  */
 const getShortPrimeNumberList = (n) => {
   // Tableau qui recevra les nombres premiers.
@@ -31,7 +31,7 @@ const getShortPrimeNumberList = (n) => {
  * @description Retourne le premier quotient entier trouvé de **_n_** divisé par un des nombres contenus dans **_list_**.
  * @param {number} n - Nombre à diviser
  * @param {number[]} list - Liste des diviseurs à soumettre
- * @returns {number} Premier quotient entier trouvé de **_n_** divisé par un des nombres contenus dans **_list_**.
+ * @returns {number}
  */
 const getFirstQuotient = (n, list) => {
   for (let element of list) {
@@ -44,9 +44,9 @@ const getFirstQuotient = (n, list) => {
 /**
  * @function
  * @name getPrimeFactorList
- * @description Retourne la liste des facteurs premiers de **_n_**.
+ * @description Retourne la liste des facteurs premiers du nombre passé en argument.
  * @param {number} n - Nombre à décomposer en facteurs premiers
- * @returns {number[]} Liste des facteurs premiers de **_n_**.
+ * @returns {number[]}
  */
 const getPrimeFactorList = (n) => {
   const list = getShortPrimeNumberList(n);

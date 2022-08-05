@@ -27,15 +27,15 @@ const isPrimeNumber = (n) => {
 /**
  * @function
  * @name getPrimeNumberList
- * @description Génère une liste des nombres premiers compris entre 2 et **_n_**.
- * @param {number} n - Nombre maximum à inclure dans la liste
- * @returns {number[]} Liste des nombres premiers compris entre 2 et **_n_**.
+ * @description Retourne la liste des nombres premiers compris entre 2 et le nombre passé en argument .
+ * @param {number} maximumValue - Nombre le plus grand pouvant figurer dans la liste
+ * @returns {number[]}
  */
-const getPrimeNumberList = (n) => {
+const getPrimeNumberList = (maximumValue) => {
   let primeNumberList = [];
-  for (let d = 2; d <= n; d++) {
-    if (isPrimeNumber(d) === true) {
-      primeNumberList.push(d);
+  for (let e = 2; e <= maximumValue; e++) {
+    if (isPrimeNumber(e) === true) {
+      primeNumberList.push(e);
     }
   }
   return primeNumberList;
