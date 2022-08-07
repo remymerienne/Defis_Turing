@@ -1,13 +1,25 @@
 import {
+  isPrimeNumber,
   getShortPrimeNumberList,
-  getFirstQuotient,
+  getFirstDivider,
   getPrimeFactorList,
 } from '../js/arithmetic/prime_factors.js';
 
-const number = 4000;
-const shortPrimeNumberList = [2, 4, 5, 8, 10, 16, 20, 25, 32, 40, 50];
-const firstQuotient = 2000;
-const primeFactorList = [2, 2, 2, 2, 2, 5, 5, 5];
+const number = 3003;
+const shortPrimeNumberList = [
+  2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53,
+];
+const firstDivider = 3;
+const primeFactorList = [3, 7, 11, 13];
+
+describe('isPrimeNumber() Unit Test Suites', () => {
+  test('A non-prime number passed as an argument should return false', () => {
+    expect(isPrimeNumber(38)).toBe(false);
+  });
+  test('A prime number passed as an argument should return true', () => {
+    expect(isPrimeNumber(41)).toBe(true);
+  });
+});
 
 describe('getShortPrimeNumberList() Unit Test Suites', () => {
   test('should return the list of prime numbers between the number passed as argument and its square root', () => {
@@ -15,9 +27,9 @@ describe('getShortPrimeNumberList() Unit Test Suites', () => {
   });
 });
 
-describe('getFirstQuotient() Unit Test Suites', () => {
-  test('should return the first integer quotient found of `number` divided by one of the numbers contained in `shortPrimeNumberlist`', () => {
-    expect(getFirstQuotient(number, shortPrimeNumberList)).toBe(firstQuotient);
+describe('getFirstDivider() Unit Test Suites', () => {
+  test('should return the first number contained in `shortPrimeNumberList` that divides `number`.', () => {
+    expect(getFirstDivider(number, shortPrimeNumberList)).toBe(firstDivider);
   });
 });
 
