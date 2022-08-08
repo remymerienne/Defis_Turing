@@ -26,33 +26,15 @@ const isPrimeNumber = (n) => {
 
 /**
  * @function
- * @name getShortPrimeNumberList
- * @description Retourne la liste des nombres premiers compris entre 2 et la racine carrée du nombre passé en argument.
- * @param {number} n - Nombre dont la racine carré déterminera la valeur maximum de la liste
- * @returns {number[]}
- */
-const getShortPrimeNumberList = (n) => {
-  let shortPrimeNumberList = [];
-  for (let e = 2; e <= Math.sqrt(n); e++) {
-    if (isPrimeNumber(e) === true) {
-      shortPrimeNumberList.push(e);
-    }
-  }
-  return shortPrimeNumberList;
-};
-
-/**
- * @function
  * @name getFirstDivider
- * @description Retourne le premier nombre contenus dans **_list_** qui divise **_n_**.
+ * @description Retourne le premier nombre premier qui divise **_n_**.
  * @param {number} n - Nombre à diviser
- * @param {number[]} list - Liste des diviseurs à soumettre
  * @returns {number}
  */
-const getFirstDivider = (n, list) => {
-  for (let element of list) {
-    if (n % element === 0) {
-      return element;
+const getFirstDivider = (n) => {
+  for (let e = 2; e <= Math.sqrt(n); e++) {
+    if (n % e === 0 && isPrimeNumber(e) === true) {
+      return e;
     }
   }
 };
@@ -65,15 +47,15 @@ const getFirstDivider = (n, list) => {
  * @returns {number[]}
  */
 const getPrimeFactorList = (n) => {
-  const list = getShortPrimeNumberList(n);
+  // const list = getShortPrimeNumberList(n);
   let primeFactorList = [];
   // Tant que le diviseur est inférieur ou égale à la racine carrée du nombre
   // qu'il est censé diviser :
-  while (getFirstDivider(n, list) <= Math.sqrt(n)) {
+  while (getFirstDivider(n) <= Math.sqrt(n)) {
     // Le premier diviseur est stocké dans le tableau de résultat.
-    primeFactorList.push(getFirstDivider(n, list));
+    primeFactorList.push(getFirstDivider(n));
     // Le quotient devient le nouveau nombre à tester.
-    n = n / getFirstDivider(n, list);
+    n = n / getFirstDivider(n);
   }
   // Le dernier quotient obtenu devient le dernier facteur premier et est
   // ajouté au tableau.
@@ -81,9 +63,4 @@ const getPrimeFactorList = (n) => {
   return primeFactorList;
 };
 
-export {
-  isPrimeNumber,
-  getShortPrimeNumberList,
-  getFirstDivider,
-  getPrimeFactorList,
-};
+export { isPrimeNumber, getFirstDivider, getPrimeFactorList };
