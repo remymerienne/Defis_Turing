@@ -1,6 +1,6 @@
 import {
   isPrimeNumber,
-  getFirstDivider,
+  getPrimeDivider,
   getPrimeFactorList,
 } from '../js/arithmetic/prime_factors.js';
 
@@ -17,9 +17,9 @@ describe('isPrimeNumber() Unit Test Suites', () => {
   });
 });
 
-describe('getFirstDivider() Unit Test Suites', () => {
+describe('getPrimeDivider() Unit Test Suites', () => {
   test('should return the first prime number that divides `number`.', () => {
-    expect(getFirstDivider(number)).toBe(firstDivider);
+    expect(getPrimeDivider(number)).toBe(firstDivider);
   });
 });
 

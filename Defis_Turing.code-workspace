@@ -8,31 +8,23 @@
   "settings": {
     "window.zoomLevel": 0,
     "liveServer.settings.port": 5500,
-    "liveServer.settings.multiRootWorkspaceName": "Defis_Turing"
-    // "restoreTerminals.terminals": [
-    //   {
-    //     "splitTerminals": [
-    //       {
-    //         "name": "Sass",
-    //         "commands": ["npm run sass"]
-    //       }
-    //     ]
-    //   },
-    // {
-    //   "splitTerminals": [
-    //     {
-    //       "name": "Server",
-    //       "commands": ["npm run server"]
-    //     }
-    //   ]
-    // },
-    //   {
-    //     "splitTerminals": [
-    //       {
-    //         "name": "Git"
-    //       }
-    //     ]
-    //   }
-    // ]
+    "liveServer.settings.multiRootWorkspaceName": "Defis_Turing",
+    "restoreTerminals.terminals": [
+      {
+        "splitTerminals": [
+          {
+            "name": "Git"
+          }
+        ]
+      },
+      {
+        "splitTerminals": [
+          {
+            "name": "Sass",
+            "commands": ["npm run sass"]
+          }
+        ]
+      }
+    ]
   }
 }

@@ -26,12 +26,12 @@ const isPrimeNumber = (n) => {
 
 /**
  * @function
- * @name getFirstDivider
+ * @name getPrimeDivider
  * @description Retourne le premier nombre premier qui divise **_n_**.
  * @param {number} n - Nombre à diviser
  * @returns {number}
  */
-const getFirstDivider = (n) => {
+const getPrimeDivider = (n) => {
   for (let e = 2; e <= Math.sqrt(n); e++) {
     if (n % e === 0 && isPrimeNumber(e) === true) {
       return e;
@@ -47,15 +47,14 @@ const getFirstDivider = (n) => {
  * @returns {number[]}
  */
 const getPrimeFactorList = (n) => {
-  // const list = getShortPrimeNumberList(n);
   let primeFactorList = [];
   // Tant que le diviseur est inférieur ou égale à la racine carrée du nombre
   // qu'il est censé diviser :
-  while (getFirstDivider(n) <= Math.sqrt(n)) {
+  while (getPrimeDivider(n) <= Math.sqrt(n)) {
     // Le premier diviseur est stocké dans le tableau de résultat.
-    primeFactorList.push(getFirstDivider(n));
+    primeFactorList.push(getPrimeDivider(n));
     // Le quotient devient le nouveau nombre à tester.
-    n = n / getFirstDivider(n);
+    n = n / getPrimeDivider(n);
   }
   // Le dernier quotient obtenu devient le dernier facteur premier et est
   // ajouté au tableau.
@@ -63,4 +62,4 @@ const getPrimeFactorList = (n) => {
   return primeFactorList;
 };
 
-export { isPrimeNumber, getFirstDivider, getPrimeFactorList };
+export { isPrimeNumber, getPrimeDivider, getPrimeFactorList };
