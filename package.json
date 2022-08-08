@@ -4,9 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "doc": "jsdoc -c ./jsdoc.conf.json",
+    "sass": "sass ./sass/main.scss ./dist/css/style.css --watch",
     "test": "jest --watch --colors",
-    "test-cov": "jest --coverage"
+    "test-cov": "jest --coverage",
+    "doc": "jsdoc -c ./jsdoc.conf.json"
   },
   "repository": {
     "type": "git",
@@ -26,6 +27,7 @@
     "@types/jest": "^28.1.4",
     "eslint": "^8.19.0",
     "jest": "^28.1.2",
-    "jsdoc": "^3.6.10"
+    "jsdoc": "^3.6.10",
+    "sass": "^1.54.3"
   }
 }
