@@ -1,4 +1,4 @@
-import { getFibonacciSequence } from '../js/arithmetic/functions/fibonacci_sequence.js';
+import { getFibonacciSequence } from '../js/functions/fibonacci_sequence.js';
 
 describe('getFibonacciSequence() Unit Test Suites', () => {
   test('should return a list of numbers that are part of the Fibonacci sequence between 0 and the number passed as an argument.', () => {

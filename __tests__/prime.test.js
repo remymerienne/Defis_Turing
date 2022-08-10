@@ -1,4 +1,4 @@
-import Prime from '../js/arithmetic/containers/prime.js';
+import Prime from '../js/containers/prime.js';
 
 const prime = new Prime();
 

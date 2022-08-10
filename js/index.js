@@ -1,5 +1,5 @@
-import Prime from './arithmetic/containers/prime.js';
-import { getFibonacciSequence } from './arithmetic/functions/fibonacci_sequence.js';
+import Prime from './containers/prime.js';
+import { getFibonacciSequence } from './functions/fibonacci_sequence.js';
 
 const prime = new Prime();
 
