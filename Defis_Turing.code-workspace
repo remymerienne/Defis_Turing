@@ -28,7 +28,7 @@
       {
         "splitTerminals": [
           {
-            "name": "Tests",
+            "name": "Test",
             "commands": ["npm run test"]
           }
         ]
