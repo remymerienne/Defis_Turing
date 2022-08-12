@@ -14,9 +14,11 @@
     <!-- <script defer src="./dist/js/index.bundle.min.js"></script> -->
   </head>
   <body>
-    <div class="container">
-      <main class="bg-light shadow mt-3 p-5">
+    <main>
+      <div class="container bg-light shadow p-sm-3 mt-3">
+        <!-- - bloc row des cards -->
         <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3">
+          <!-- + card Fibonacci -->
           <div class="col">
             <div class="card h-100 shadow border-0">
               <img
@@ -30,49 +32,73 @@
                   Some quick example text to build on the card title and make up
                   the bulk of the card's content.
                 </p>
-                <a href="#" class="btn btn-primary">Link</a>
+                <a
+                  class="btn btn-primary"
+                  data-bs-toggle="offcanvas"
+                  href="#fibonacciSequence"
+                  role="button"
+                  aria-controls="fibonacciSequence"
+                >
+                  Link with href
+                </a>
+                <!-- ^ offcanvas Fibonacci -->
+                <div
+                  class="offcanvas offcanvas-top"
+                  data-bs-backdrop="false"
+                  tabindex="-1"
+                  id="fibonacciSequence"
+                  aria-labelledby="fibonacciSequenceLabel"
+                >
+                  <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="fibonacciSequenceLabel">
+                      Suite de Fibonacci
+                    </h5>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="offcanvas"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="offcanvas-body">
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      Porro cupiditate a quos magni voluptatum sint molestiae.
+                      Quia, ut ipsa. Maiores earum iste quam laborum beatae hic
+                      laudantium quas quia excepturi.
+                    </p>
+                    <!-- = Form Fibonacci -->
+                    <form>
+                      <label
+                        for="fibonacciSequenceMaximumValue"
+                        class="form-label"
+                        >Maximum value</label
+                      >
+                      <input
+                        type="number"
+                        class="form-control mb-3"
+                        id="fibonacciSequenceMaximumValue"
+                        placeholder="Saisir un chiffre"
+                      />
+                      <button type="submit" class="btn btn-primary mb-3">
+                        Confirm identity
+                      </button>
+                    </form>
+                    <!-- = Form Fibonacci - End -->
+                    <!-- =  Result Fibonacci -->
+                    <div id="resultFibonacci"></div>
+                    <!-- = Result Fibonacci - End -->
+                  </div>
+                </div>
+                <!-- ^ offcanvas Fibonacci - End -->
               </div>
             </div>
           </div>
-          <div class="col">
-            <div class="card h-100 shadow border-0">
-              <img
-                src="dist/img/math-6683827_1280.png"
-                class="card-img-top p-5"
-                alt=""
-              />
-              <div class="card-body">
-                <h5 class="card-title">Les nombres premiers</h5>
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </p>
-                <a href="#" class="btn btn-primary">Link</a>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card h-100 shadow border-0">
-              <img
-                src="dist/img/school-1555910_1280.png"
-                class="card-img-top p-5"
-                alt=""
-              />
-              <div class="card-body">
-                <h5 class="card-title">
-                  Décomposition en produit de facteurs premiers
-                </h5>
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </p>
-                <a href="#" class="btn btn-primary">Link</a>
-              </div>
-            </div>
-          </div>
+          <!-- + card Fibonacci - End -->
         </div>
-      </main>
-    </div>
+        <!-- - bloc row des cards - End -->
+      </div>
+    </main>
     <!-- ! Bootstrap -->
     <script src="./dist/js/bootstrap.bundle.min.js"></script>
     <!-- ! Tooltip Bootstrap -->
