@@ -24,6 +24,14 @@
             "commands": ["npm run sass"]
           }
         ]
+      },
+      {
+        "splitTerminals": [
+          {
+            "name": "Test",
+            "commands": ["npm run test"]
+          }
+        ]
       }
     ]
   }
