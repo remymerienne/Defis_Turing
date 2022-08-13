@@ -68,19 +68,21 @@
                       laudantium quas quia excepturi.
                     </p>
                     <!-- = Form Fibonacci -->
-                    <form>
-                      <label
-                        for="fibonacciSequenceMaximumValue"
-                        class="form-label"
+                    <form id="fibonacciForm">
+                      <label for="sequenceMaximumValue" class="form-label"
                         >Maximum value</label
                       >
                       <input
                         type="number"
                         class="form-control mb-3"
-                        id="fibonacciSequenceMaximumValue"
+                        id="sequenceMaximumValue"
                         placeholder="Saisir un chiffre"
                       />
-                      <button type="button" class="btn btn-primary mb-3">
+                      <button
+                        type="button"
+                        id="fibonacciButton"
+                        class="btn btn-primary mb-3"
+                      >
                         Lancer le calcul
                       </button>
                     </form>

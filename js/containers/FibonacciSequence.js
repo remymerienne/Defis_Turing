@@ -1,4 +1,15 @@
 export default class {
+  constructor() {
+    const buttonListened = document.getElementById('fibonacciButton');
+
+    buttonListened.addEventListener('click', () => {
+      const inputListened = document.getElementById('sequenceMaximumValue');
+      const userInput = inputListened.value;
+
+      this.displayFibonacciSequence(userInput);
+    });
+  }
+
   getFibonacciSequence(maximumValue) {
     const fibonacciSequence = [0, 1];
 
@@ -13,5 +24,17 @@ export default class {
     }
 
     return fibonacciSequence;
+  }
+
+  mapFibonacciSequence(array) {
+    return array.map((e) => e).join(' - ');
+  }
+
+  displayFibonacciSequence(userInput) {
+    const nodeToInject = document.getElementById('resultFibonacci');
+    const sequence = this.getFibonacciSequence(userInput);
+    const displayableSequence = this.mapFibonacciSequence(sequence);
+
+    nodeToInject.innerHTML = displayableSequence;
   }
 }
