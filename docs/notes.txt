@@ -1,27 +1,9 @@
 NOTES
 =====
 
-Etapes :
---------
-- Coder un défi
-- Tester
-- Documenter
-
-=> implémentation HTML ?
-
-*******************************************************************************
-
-Prochaines méthodes :
----------------------
-- pop
-- shift 
-- unshift
-- reduce
-
-*******************************************************************************
-
-Matrice :
+A faire :
 ---------
-- photo extensions
+- Faire un dossier 'draft' avec fichiers => { html, js, sass } ++ Ajouter à la matrice
+- Passer html-lang en fr ++ matrice
 
 *******************************************************************************
