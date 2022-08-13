@@ -22,12 +22,12 @@
           <div class="col">
             <div class="card h-100 shadow border-0">
               <img
-                src="dist/img/math-152688_1280.png"
+                src="dist/img/school-1555910_1280.png"
                 class="card-img-top p-5"
                 alt=""
               />
               <div class="card-body">
-                <h5 class="card-title">La Suite de Fibonacci</h5>
+                <h5 class="card-title">La suite de Fibonacci</h5>
                 <p class="card-text">
                   Some quick example text to build on the card title and make up
                   the bulk of the card's content.
@@ -39,7 +39,7 @@
                   role="button"
                   aria-controls="fibonacciSequence"
                 >
-                  Link with href
+                  En savoir plus
                 </a>
                 <!-- ^ offcanvas Fibonacci -->
                 <div
@@ -51,7 +51,7 @@
                 >
                   <div class="offcanvas-header">
                     <h5 class="offcanvas-title" id="fibonacciSequenceLabel">
-                      Suite de Fibonacci
+                      La suite de Fibonacci
                     </h5>
                     <button
                       type="button"
@@ -81,7 +81,7 @@
                         placeholder="Saisir un chiffre"
                       />
                       <button type="button" class="btn btn-primary mb-3">
-                        Confirm identity
+                        Lancer le calcul
                       </button>
                     </form>
                     <!-- = Form Fibonacci - End -->
@@ -95,7 +95,6 @@
             </div>
           </div>
           <!-- + card Fibonacci - End -->
-
           <!-- + card Prime-number -->
           <div class="col">
             <div class="card h-100 shadow border-0">
@@ -105,7 +104,7 @@
                 alt=""
               />
               <div class="card-body">
-                <h5 class="card-title">Les Nombres Premiers</h5>
+                <h5 class="card-title">Les nombres premiers</h5>
                 <p class="card-text">
                   Some quick example text to build on the card title and make up
                   the bulk of the card's content.
@@ -115,9 +114,9 @@
                   data-bs-toggle="offcanvas"
                   href="#primeNumber"
                   role="button"
-                  aria-controls="fibonacciSequence"
+                  aria-controls="primeNumber"
                 >
-                  Link with href
+                  En savoir plus
                 </a>
                 <!-- ^ offcanvas Prime-number -->
                 <div
@@ -129,7 +128,7 @@
                 >
                   <div class="offcanvas-header">
                     <h5 class="offcanvas-title" id="primeNumberLabel">
-                      Les Nombres Premiers
+                      Les nombres premiers
                     </h5>
                     <button
                       type="button"
@@ -157,7 +156,7 @@
                         placeholder="Saisir un chiffre"
                       />
                       <button type="button" class="btn btn-primary mb-3">
-                        Confirm identity
+                        Lancer le calcul
                       </button>
                     </form>
                     <!-- = Form Prime-number - End -->
@@ -171,6 +170,83 @@
             </div>
           </div>
           <!-- + card Prime-number - End -->
+          <!-- + card Prime-factor -->
+          <div class="col">
+            <div class="card h-100 shadow border-0">
+              <img
+                src="dist/img/math-152688_1280.png"
+                class="card-img-top p-5"
+                alt=""
+              />
+              <div class="card-body">
+                <h5 class="card-title">
+                  Décomposition en produit de facteurs premiers
+                </h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <a
+                  class="btn btn-primary"
+                  data-bs-toggle="offcanvas"
+                  href="#primeFactor"
+                  role="button"
+                  aria-controls="primeFactor"
+                >
+                  En savoir plus
+                </a>
+                <!-- ^ offcanvas Prime-factor -->
+                <div
+                  class="offcanvas offcanvas-top"
+                  data-bs-backdrop="false"
+                  tabindex="-1"
+                  id="primeFactor"
+                  aria-labelledby="primeFactorLabel"
+                >
+                  <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="primeFactorLabel">
+                      Décomposition en produit de facteurs premiers
+                    </h5>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="offcanvas"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="offcanvas-body">
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      Porro cupiditate a quos magni voluptatum sint molestiae.
+                      Quia, ut ipsa. Maiores earum iste quam laborum beatae hic
+                      laudantium quas quia excepturi.
+                    </p>
+                    <!-- = Form Prime-factor -->
+                    <form>
+                      <label for="primeFactorMaximumValue" class="form-label"
+                        >Maximum value</label
+                      >
+                      <input
+                        type="number"
+                        class="form-control mb-3"
+                        id="primeFactorMaximumValue"
+                        placeholder="Saisir un chiffre"
+                      />
+                      <button type="button" class="btn btn-primary mb-3">
+                        Lancer le calcul
+                      </button>
+                    </form>
+                    <!-- = Form Prime-factor - End -->
+                    <!-- =  Result Prime-factor -->
+                    <div id="resultPrimeFactor"></div>
+                    <!-- = Result Prime-factor - End -->
+                  </div>
+                </div>
+                <!-- ^ offcanvas Prime-factor - End -->
+              </div>
+            </div>
+          </div>
+          <!-- + card Prime-factor - End -->
         </div>
         <!-- - bloc row des cards - End -->
       </div>
