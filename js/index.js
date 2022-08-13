@@ -1,7 +1,8 @@
+import FibonacciSequense from './containers/FibonacciSequence.js';
 import Prime from './containers/prime.js';
-import { getFibonacciSequence } from './functions/fibonacci_sequence.js';
 
 const prime = new Prime();
+const fibonacci = new FibonacciSequense();
 
 let start;
 let end;
@@ -23,6 +24,6 @@ console.log(end - start + ' ms.');
 // = Suite de Fibonacci
 start = performance.now();
 console.log('Suite de Fibonacci up to 1 000 000 :');
-console.log(getFibonacciSequence(1000000));
+console.log(fibonacci.getFibonacciSequence(1000000));
 end = performance.now();
 console.log(end - start + ' ms.');
