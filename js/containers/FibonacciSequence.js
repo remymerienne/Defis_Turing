@@ -14,9 +14,8 @@ export default class {
       this.displayFibonacciSequence(sequence, nodeToInject);
 
       const end = performance.now();
-      nodeToInject.innerHTML += `<p style="margin-top: 16px">Temps nécessaire au calcul et à l'affichage => ${
-        end - start
-      } ms</p>`;
+      const time = end - start;
+      this.displayTimer(nodeToInject, time);
     });
 
     resetButton.forEach((node) => {
@@ -49,5 +48,9 @@ export default class {
       .join(' - ');
 
     nodeToInject.innerHTML = displayableSequence;
+  }
+
+  displayTimer(nodeToInject, time) {
+    nodeToInject.innerHTML += `<p style="margin-top: 16px">Temps nécessaire au calcul et à l'affichage => ${time} ms</p>`;
   }
 }
