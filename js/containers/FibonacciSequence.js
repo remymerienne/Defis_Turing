@@ -7,9 +7,16 @@ export default class {
     const nodeToInject = document.getElementById('js-result-fibonacci');
 
     calculateButton.addEventListener('click', () => {
+      const start = performance.now();
+
       const userInput = inputListened.value;
       const sequence = this.getFibonacciSequence(userInput);
       this.displayFibonacciSequence(sequence, nodeToInject);
+
+      const end = performance.now();
+      nodeToInject.innerHTML += `<p style="margin-top: 16px">Temps nécessaire au calcul et à l'affichage => ${
+        end - start
+      } ms</p>`;
     });
 
     resetButton.forEach((node) => {

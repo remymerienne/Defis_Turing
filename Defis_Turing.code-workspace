@@ -13,13 +13,6 @@
       {
         "splitTerminals": [
           {
-            "name": "Git"
-          }
-        ]
-      },
-      {
-        "splitTerminals": [
-          {
             "name": "Sass",
             "commands": ["npm run sass"]
           }
