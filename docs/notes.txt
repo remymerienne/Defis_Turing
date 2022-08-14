@@ -17,5 +17,6 @@ A faire :
 - Faire un dossier 'draft' avec fichiers => { html, js, sass } ++ Ajouter à la matrice
 - Passer html-lang en fr ++ matrice
 - npm install -D jest-environment-jsdom ++ matrice + en tête
+- Retirer git dans terminal workspace => matrice
 
 *******************************************************************************

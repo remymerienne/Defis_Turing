@@ -15,7 +15,7 @@ export default class {
 
       const end = performance.now();
       const time = end - start;
-      this.displayTimer(nodeToInject, time);
+      this.displayExecutionTime(nodeToInject, time);
     });
 
     resetButton.forEach((node) => {
@@ -50,7 +50,7 @@ export default class {
     nodeToInject.innerHTML = displayableSequence;
   }
 
-  displayTimer(nodeToInject, time) {
+  displayExecutionTime(nodeToInject, time) {
     nodeToInject.innerHTML += `<p style="margin-top: 16px">Temps nécessaire au calcul et à l'affichage => ${time} ms</p>`;
   }
 }
