@@ -55,7 +55,7 @@
                     </h5>
                     <button
                       type="button"
-                      class="btn-close"
+                      class="btn-close js-reset-fibonacci"
                       data-bs-dismiss="offcanvas"
                       aria-label="Close"
                     ></button>
@@ -68,27 +68,33 @@
                       laudantium quas quia excepturi.
                     </p>
                     <!-- = Form Fibonacci -->
-                    <form id="fibonacciForm">
-                      <label for="sequenceMaximumValue" class="form-label"
+                    <form id="js-form-fibonacci">
+                      <label for="js-input-fibonacci" class="form-label"
                         >Maximum value</label
                       >
                       <input
                         type="number"
                         class="form-control mb-3"
-                        id="sequenceMaximumValue"
-                        placeholder="Saisir un chiffre"
+                        id="js-input-fibonacci"
+                        placeholder="Saisir un nombre"
                       />
                       <button
                         type="button"
-                        id="fibonacciButton"
-                        class="btn btn-primary mb-3"
+                        id="js-calculate-fibonacci"
+                        class="btn btn-primary"
                       >
                         Lancer le calcul
+                      </button>
+                      <button
+                        type="button"
+                        class="btn btn-danger js-reset-fibonacci"
+                      >
+                        Reset
                       </button>
                     </form>
                     <!-- = Form Fibonacci - End -->
                     <!-- =  Result Fibonacci -->
-                    <div id="resultFibonacci"></div>
+                    <div id="js-result-fibonacci"></div>
                     <!-- = Result Fibonacci - End -->
                   </div>
                 </div>

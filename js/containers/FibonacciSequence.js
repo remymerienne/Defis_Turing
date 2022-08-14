@@ -1,12 +1,22 @@
 export default class {
   constructor() {
-    const buttonListened = document.getElementById('fibonacciButton');
+    const calculateButton = document.getElementById('js-calculate-fibonacci');
+    const resetButton = document.querySelectorAll('.js-reset-fibonacci');
+    const form = document.getElementById('js-form-fibonacci');
+    const inputListened = document.getElementById('js-input-fibonacci');
+    const nodeToInject = document.getElementById('js-result-fibonacci');
 
-    buttonListened.addEventListener('click', () => {
-      const inputListened = document.getElementById('sequenceMaximumValue');
+    calculateButton.addEventListener('click', () => {
       const userInput = inputListened.value;
+      const sequence = this.getFibonacciSequence(userInput);
+      this.displayFibonacciSequence(sequence, nodeToInject);
+    });
 
-      this.displayFibonacciSequence(userInput);
+    resetButton.forEach((node) => {
+      node.addEventListener('click', () => {
+        form.reset();
+        nodeToInject.innerHTML = '';
+      });
     });
   }
 
@@ -26,14 +36,10 @@ export default class {
     return fibonacciSequence;
   }
 
-  mapFibonacciSequence(array) {
-    return array.map((e) => e).join(' - ');
-  }
-
-  displayFibonacciSequence(userInput) {
-    const nodeToInject = document.getElementById('resultFibonacci');
-    const sequence = this.getFibonacciSequence(userInput);
-    const displayableSequence = this.mapFibonacciSequence(sequence);
+  displayFibonacciSequence(fibonacciSequence, nodeToInject) {
+    const displayableSequence = fibonacciSequence
+      .map((e) => e.toLocaleString())
+      .join(' - ');
 
     nodeToInject.innerHTML = displayableSequence;
   }
