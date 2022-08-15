@@ -11,7 +11,8 @@ export default class {
 
       const userInput = inputListened.value;
       const sequence = this.getFibonacciSequence(userInput);
-      this.displayFibonacciSequence(sequence, nodeToInject);
+      this.displayFibonacciSequence(nodeToInject, sequence);
+      this.displaySequenceLength(nodeToInject, sequence);
 
       const end = performance.now();
       const time = end - start;
@@ -42,12 +43,16 @@ export default class {
     return fibonacciSequence;
   }
 
-  displayFibonacciSequence(fibonacciSequence, nodeToInject) {
+  displayFibonacciSequence(nodeToInject, fibonacciSequence) {
     const displayableSequence = fibonacciSequence
       .map((e) => e.toLocaleString())
       .join(' - ');
 
     nodeToInject.innerHTML = displayableSequence;
+  }
+
+  displaySequenceLength(nodeToInject, sequence) {
+    nodeToInject.innerHTML += `<p style="margin-top: 16px">Nombres générés => ${sequence.length}</p>`;
   }
 
   displayExecutionTime(nodeToInject, time) {
