@@ -25,6 +25,14 @@
             "commands": ["npm run test"]
           }
         ]
+      },
+      {
+        "splitTerminals": [
+          {
+            "name": "testCoverage",
+            "commands": ["npm run test-cov"]
+          }
+        ]
       }
     ]
   }

@@ -1,6 +1,6 @@
 import * as nodes from './constants/mainNodes.js';
-import FibonacciSequense from './containers/FibonacciSequence.js';
 import FibonacciSequenseUI from './views/FibonacciSequenceUI.js';
+import FibonacciSequense from './containers/FibonacciSequence.js';
 
 nodes.fibonacci.innerHTML = FibonacciSequenseUI();
 new FibonacciSequense();

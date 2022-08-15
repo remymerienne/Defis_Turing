@@ -1,6 +1,10 @@
 NOTES
 =====
 
+Projet :
+--------
+Renommer le repo
+
 Prochain Commit :
 -----------------
 - prime factore =>
@@ -16,7 +20,10 @@ A faire :
 ---------
 - Faire un dossier 'draft' avec fichiers => { html, js, sass } ++ Ajouter à la matrice
 - Passer html-lang en fr ++ matrice
-- npm install -D jest-environment-jsdom ++ matrice + en tête
+- npm install -D jest-environment-jsdom ++ matrice + en tête => pour base de test UI
+- jest => watchAll
+- Matrice => vérifier script test-cov pout même qu'ici
+- Exécution de test-cov dans workspace
 - Retirer git dans terminal workspace => matrice
 
 *******************************************************************************

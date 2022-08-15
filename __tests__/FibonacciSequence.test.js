@@ -1,4 +1,12 @@
+/**
+ * @jest-environment jsdom
+ */
+
+import FibonacciSequenceUI from '../js/views/FibonacciSequenceUI.js';
 import FibonacciSequence from '../js/containers/FibonacciSequence.js';
+
+const html = FibonacciSequenceUI();
+document.body.innerHTML = html;
 
 describe('getFibonacciSequence() Unit Test Suites', () => {
   test('should return a list of numbers that are part of the Fibonacci sequence between 0 and the number passed as an argument.', () => {
