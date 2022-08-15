@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "sass": "sass ./sass/main.scss ./dist/css/style.css --watch",
-    "test": "jest --watch --colors",
+    "test": "jest --watchAll --colors",
     "test-cov": "jest --coverage",
     "doc": "jsdoc -c ./jsdoc.conf.json"
   },

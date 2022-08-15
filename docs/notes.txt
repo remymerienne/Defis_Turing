@@ -6,7 +6,7 @@ Prochain Commit :
 - prime factore =>
                     - preventDefault()
                     - reset() ------------------------------------ OK
-                    - Ajouter timer + length
+                    - Ajouter timer + length --------------------- OK
                     - Supprimer le type number et gérer en js
                     - Voir Bootstrap pour error form
                     - Tests
